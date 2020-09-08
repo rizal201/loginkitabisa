@@ -1,0 +1,333 @@
+.tampilan__atas{
+width: 100%;
+top: 0px;
+left: 0px;
+z-index: 11;
+height: 60px;
+position: fixed;
+color: rgb(255, 255, 255);
+transition: background-color 0.35s ease-in 0s;
+background: rgb(0, 174, 239);
+border-bottom: none;
+}
+
+.atas__dua{
+    display: flex;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: 480px;
+    height: 100%;
+    z-index: 2;
+    position: relative;
+    margin: 0px auto;
+    padding: 0px 1em;
+}
+
+.tombol{
+font-size: 16px;
+    display: flex;
+    margin-right: 1.5em;
+    cursor: pointer;
+    position: relative;
+}
+
+span{
+    font-family: 'Open Sans' , sans-serif;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 600;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    text-transform: capitalize;
+    overflow: hidden;
+}
+
+.tampilan__login{
+    background-color: white;
+    position: relative;
+    top: 60px;
+    max-width: 480px;
+    width: 100%;
+    box-sizing: border-box;
+    min-height: calc(100vh - 60px);
+    margin: 0px auto;
+    padding: 10px 16px;
+}
+
+.tampilan__menu-atas{
+    width: 100%;
+    position: fixed;
+    z-index: 10;
+    padding-left: 1em;
+    padding-right: 1em;
+    max-width: 480px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.menu__atas-dua{
+    font-size: 12px;
+    display: flex;
+    top: 0px;
+    box-shadow: rgba(0, 0, 0, 0.26) 0px 2px 4px 0px;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    max-width: none;
+    background-color: rgb(255, 198, 133);
+    color: rgb(74, 74, 74);
+    margin: 0px auto;
+    border-radius: 3px;
+    padding: 1em;
+}
+
+.menu__icon{
+    margin-right: 1em;
+    flex-shrink: 0;
+}
+
+.warning{
+    max-width: 100%;
+    vertical-align: middle;
+}
+
+.style__space{
+    font-size: 14px;
+    word-break: break-word;
+}
+
+.masuk{
+    color: rgb(77, 77, 77);
+}
+
+.title{
+    font-family: 'Open Sans' , sans-serif;
+    color: rgb(74, 74, 74);
+    font-size: 20px;
+    line-height: 40px;
+    font-weight: 400;
+}
+
+.style__form{
+    margin-top: 2em;
+}
+
+.style__fieldset{
+    margin: 0.75em 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px;
+}
+
+.style__textfield{
+    position: relative;
+    display: inline-flex;
+    -webkit-box-align: center;
+    align-items: center;
+    width: 100%;
+    border-radius: 3px;
+}
+
+.style__textfieldinput{
+    height: 45px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 9.5px 9.5px 9.5px 15px;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232, 233, 235);
+    border-image: initial;
+}
+
+.style__textfieldpassword{
+    height: 45px;
+    -webkit-box-flex: 1;
+    flex-grow: 1;
+    padding: 9.5px 9.5px 9.5px 15px;
+    background: rgb(255, 255, 255);
+    transition: all 0.3s ease 0s;
+    border-radius: 3px;
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(232, 233, 235);
+    border-image: initial;
+    font-size: 1em;
+}
+
+.style__paswordtoggle{
+    position: absolute;
+    display: flex;
+    -webkit-box-pack: center;
+    justify-content: center;
+    -webkit-box-align: center;
+    align-items: center;
+    right: 5px;
+    top: 4px;
+    font-size: 16px;
+    color: rgb(153, 153, 153);
+    padding: 7.5px;
+}
+
+.style__passwordtoggle-sc{
+    position: static;
+    top: 0px;
+    left: 0px;
+    visibility: hidden;
+    width: 1px;
+    height: 1px;
+    clip: rect(0px, 0px, 0px, 0px);
+    margin: -1px;
+    overflow: hidden;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+}
+
+.style__fieldset-lupa{
+    margin: 0.75em 0px;
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    padding: 0px;
+}
+
+.style_infolink{
+    font-family: 'Open Sans' , sans-serif;
+    text-align: center;
+    color: rgb(0, 174, 239);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.35s ease 0s;     
+}
+
+.style__buttonwrapper{
+    font-family: 'Open Sans' , sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    font-size: 16px;
+    background-color: rgb(0, 174, 239);
+    color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    transition: all 0.35s ease 0s;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 13px 45px;
+}
+
+.style__info-belumpunya{
+    font-family: 'Open Sans' , sans-serif;
+    color: rgb(77, 77, 77);
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 3;
+    text-align: center;
+}
+
+.login_link-daftar{
+    font-family: 'Open Sans' , sans-serif;
+    text-align: center;
+    color: rgb(0, 174, 239);
+    cursor: pointer;
+    text-decoration: none;
+    transition: all 0.35s ease 0s;
+}
+
+.style__line-sc{
+    margin: 0px -16px;
+    border-top: 7px solid rgb(247, 247, 247);
+}
+
+.style__Content{
+    color: rgb(77, 77, 77);
+}
+
+.Style__Titile-lm{
+    font-family: 'Open Sans' , sans-serif;
+    color: rgb(74, 74, 74);
+    font-size: 20px;
+    line-height: 70px;
+    font-weight: 400;
+}
+
+.style_buttonContainer{
+    margin: 15px 0px;
+}
+
+.style__buttonwrapper-fc{
+    font-family: 'Open Sans' , sans-serif;
+    display: inline-block;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    font-size: 1em;
+    background-color: rgb(59, 89, 153);
+    color: rgb(255, 255, 255);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    transition: all 0.35s ease 0s;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 11px 37.5px;
+}
+
+.facebook{
+    height: 12px;
+    width: 12px;
+    margin-right: 10px;
+    vertical-align: middle;
+}
+
+.style_buttoncontainer{
+    margin: 15px 0px;
+}
+
+.style__button-goggle{
+    display: inline-block;
+    font-weight: 700;
+    line-height: normal;
+    text-align: center;
+    vertical-align: middle;
+    cursor: pointer;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    width: 100%;
+    box-shadow: rgb(188, 188, 188) 2px 1px 2px 0px;
+    font-size: 1em;
+    background-color: rgb(247, 247, 247);
+    color: rgb(74, 74, 74);
+    border-width: 0px;
+    border-style: initial;
+    border-color: initial;
+    border-image: initial;
+    transition: all 0.35s ease 0s;
+    text-decoration: none;
+    border-radius: 4px;
+    padding: 11px 37.5px;
+}
+
+.goggle{
+    margin-right: 10px;
+    vertical-align: middle;
+}

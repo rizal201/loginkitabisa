@@ -1,0 +1,108 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" integrity="sha384-JcKb8q3iqJ61gNV9KGb8thSsNjpSL0n8PARn9HuZOnIxN0hoP+VmmDGMN5t9UJ0Z" crossorigin="anonymous">
+    <link rel="icon" href="img/favicon.png">
+    <link rel="stylesheet" href="login.css">
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400;1,600;1,700&display=swap" rel="stylesheet">
+
+    <title>Kitabisa.com login</title>
+
+    <style>
+        body{
+            font-family: Open Sans,sans-serif;
+            font-size: 14px;
+            font-weight: 200;
+            color: #4a4a4a;
+            background-color: #f7f7f7;
+            -webkit-font-smoothing: antialiased;
+        }
+    </style>
+  </head>
+  <body>
+    <section id="tampilan" class="__tampilan">
+        <div class="tampilan__atas">
+            <div class="tampilan atas__dua">
+                <div id="tombol" class="tombol">
+                    <svg width="1.5em" height="1.5em" viewBox="0 0 16 16" class="bi bi-arrow-left" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+                      </svg>
+                </div>
+               <span>masuk</span>
+            </div>
+        </div>
+        <main class="tampilan__login">
+            <div class="tampilan__menu-atas" style="transition: all 300ms ease-in-out 0s; top: 10px; opacity: 0;">
+                <div class="tampilan menu__atas-dua"> 
+                    <div class="tampilan menu__icon">
+                        <img src="https://assets.kitabisa.xyz/images/icon__alert--warning.svg" alt="warning" class="warning">
+                    </div>
+                    <span class="style__space"></span>
+                </div>
+            </div>
+            <div class="tampilan masuk">
+                <h3 class="title">Masuk Ke Akun Anda</h3>
+                <form class="style style__form">
+                    <fieldset class="style style__fieldset">
+                        <div class="style style__textfield">
+                            <input type="text" autocomplete="username" id="login" name="username" value placeholder="Nomor Ponsel atau Email Anda" class="style style__textfieldinput">
+                        </div>
+                    </fieldset>
+                    <fieldset class="style style__fieldset">
+                        <div class="style style__textfield">
+                            <input type="password" autocomplete="current-password" id="login" name="Password" value placeholder="Password" class="style style__textfieldpassword">
+                            <div class="style style__paswordtoggle">
+                                <input type="checkbox" class="style style__passwordtoggle-sc">
+                                <label class="style style__passwordtoggle-sc-kl">
+                                    <svg width="1em" height="1em" viewBox="0 0 16 16" class="bi bi-eye-slash" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M13.359 11.238C15.06 9.72 16 8 16 8s-3-5.5-8-5.5a7.028 7.028 0 0 0-2.79.588l.77.771A5.944 5.944 0 0 1 8 3.5c2.12 0 3.879 1.168 5.168 2.457A13.134 13.134 0 0 1 14.828 8c-.058.087-.122.183-.195.288-.335.48-.83 1.12-1.465 1.755-.165.165-.337.328-.517.486l.708.709z"/>
+                                        <path d="M11.297 9.176a3.5 3.5 0 0 0-4.474-4.474l.823.823a2.5 2.5 0 0 1 2.829 2.829l.822.822zm-2.943 1.299l.822.822a3.5 3.5 0 0 1-4.474-4.474l.823.823a2.5 2.5 0 0 0 2.829 2.829z"/>
+                                        <path d="M3.35 5.47c-.18.16-.353.322-.518.487A13.134 13.134 0 0 0 1.172 8l.195.288c.335.48.83 1.12 1.465 1.755C4.121 11.332 5.881 12.5 8 12.5c.716 0 1.39-.133 2.02-.36l.77.772A7.029 7.029 0 0 1 8 13.5C3 13.5 0 8 0 8s.939-1.721 2.641-3.238l.708.709z"/>
+                                        <path fill-rule="evenodd" d="M13.646 14.354l-12-12 .708-.708 12 12-.708.708z"/>
+                                      </svg>
+                                </label>
+                            </div>
+                        </div>
+                    </fieldset>
+                    <fieldset class="style style__fieldset-lupa">
+                        <a id="login_link_lupa_password" class="style style_infolink">Lupa Password</a>
+                    </fieldset>
+                    <fieldset class="style style_fieldset">
+                        <button id="login_button_masuk" color="blue" class="style__buttonwrapper" type="submit"> <a href="/Kitabisa/index.html" style="color:white; text-decoration: none;"> MASUK</a></button>
+                    </fieldset>
+                </form>
+                <p class="style style__info-belumpunya">
+                    Belum Punya akun Kitabisa?
+                    <!--  -->
+                    <a id="login login_link-daftar" style="color:  rgb(0, 174, 239); cursor: pointer;">Daftar</a>
+                </p>
+            </div>
+            <hr class="style style__line-sc">
+            <div class="style style__Content">
+                <h3 class=" style Style__Titile-lm">Masuk Lebih Cepat Dengan</h3>
+                <div class="style style_buttonContainer">
+                    <button id="button-masuk-facebook" color="facebook" class="style style__buttonwrapper-fc">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/assets-kitabisa-cc/images/icons/icon_small_facebook.svg" alt="facebook" class="facebook">Masuk Dengan Facebook
+                    </button>
+                </div>
+                <div class="style style_buttoncontainer">
+                    <button id="button-masuk-goggle" color="goggle" class="style style__button-goggle">
+                        <img src="https://s3-ap-southeast-1.amazonaws.com/assets-kitabisa-cc/images/icons/icon_small_google.svg" alt="goggle" class="goggle">Masuk Dengan Goggle
+                    </button>
+                </div>
+            </div>
+        </main>
+    </section>
+
+    <!-- Optional JavaScript -->
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js" integrity="sha384-B4gt1jrGC7Jh4AgTPSdUtOBvfO8shuf57BaghqFfPlYxofvL8/KUEfYiJOMMV+rV" crossorigin="anonymous"></script>
+  </body>
+</html>
